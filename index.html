@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sriram Bharadwaj</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -89,6 +90,19 @@
       margin-bottom: 1em;
     }
 
+    .research-areas {
+      padding-left: 1.25em;
+      margin: 0 0 1.2em 0;
+    }
+
+    .research-areas li {
+      margin-bottom: 0.9em;
+    }
+
+    .research-areas li:last-child {
+      margin-bottom: 0;
+    }
+
     @media (max-width: 760px) {
       .hero {
         flex-direction: column;
@@ -111,6 +125,7 @@
     }
   </style>
 </head>
+
 <body>
   <nav>
     <a href="index.html">Home</a>
@@ -124,31 +139,37 @@
       <div class="hero-photo">
         <img src="portrait.jpeg" alt="Portrait of Sriram Bharadwaj">
       </div>
+
       <h1 class="hero-name">Sriram Bharadwaj</h1>
-      <p class="hero-subtitle">PhD Candidate in Theoretical Physics, University of California, Los Angeles</p>
+
+      <p class="hero-subtitle">
+        PhD Candidate in Theoretical Physics, University of California, Los Angeles
+      </p>
     </div>
 
     <div class="hero-text">
       <p>
-        I am a fifth-year PhD student in Theoretical Physics at UCLA. I am fortunate to be advised by Eric D’Hoker and Leo Zhou, and to be working with Di Luo and Zhongbo Kang. Previously, I received an MSc in Mathematical and Theoretical Physics from the University of Oxford and a BS in Mathematics/Applied Science from UCLA. 
+        I am a final-year PhD candidate in Theoretical Physics at UCLA. I am fortunate to be advised by Eric D’Hoker and Leo Zhou, and to be working with Di Luo and Zhongbo Kang. Previously, I received an MSc in Mathematical and Theoretical Physics from the University of Oxford and a BS in Mathematics/Applied Science from UCLA.
       </p>
 
       <p>
-  My research focuses on quantum algorithms and the quantum simulation of strongly interacting many-body systems. During my PhD, I have also worked on formal aspects of quantum field theory, which inform my approach to constructing physically faithful and resource-efficient Hamiltonian formulations.
-</p>
+        My research focuses on quantum algorithms and the quantum simulation of strongly interacting many-body systems. During my PhD, I have also worked on formal aspects of quantum field theory, which inform my approach to constructing physically faithful and resource-efficient Hamiltonian formulations.
+      </p>
 
-<ul class="research-areas">
-  <li>
-    <strong>Quantum simulation of many-body systems and lattice gauge theories:</strong>
-    I develop Hamiltonian formulations suited to quantum simulation and study their phase structure and dynamics using classical methods, including tensor networks and neural quantum states, as well as variational quantum algorithms.
-  </li>
+      <ul class="research-areas">
+        <li>
+          <strong>Quantum simulation of many-body systems and lattice gauge theories:</strong>
+          I develop Hamiltonian formulations suited to quantum simulation and study their phase structure and dynamics using classical methods, including tensor networks and neural quantum states, as well as variational quantum algorithms.
+        </li>
 
-  <li>
-  <strong>Quantum algorithms and optimization:</strong>
-  I study quantum algorithms for continuous optimization and ground-state preparation. In work on CV-QAOA, we establish rigorous convergence guarantees and black-box quantum-classical separations for continuous optimization problems. I also analyze adiabatic algorithms for preparing ground states of bosonic and lattice gauge theory Hamiltonians, with provable error and runtime guarantees.
-</li>
-</ul>
-        Recent projects include confinement vs. screening in the Schwinger model in curved space using MPS/DMRG, quantum simulations of topological phases in (2+1)D lattice QED, and variational/adiabatic quantum algorithms for lattice gauge theories. A list of publications is available on the <a href="publications.html">Publications</a> page.
+        <li>
+          <strong>Quantum algorithms and optimization:</strong>
+          I study quantum algorithms for continuous optimization and ground-state preparation. In work on CV-QAOA, we establish rigorous convergence guarantees and black-box quantum-classical separations for continuous optimization problems. I also analyze adiabatic algorithms for preparing ground states of bosonic and lattice gauge theory Hamiltonians, with provable error and runtime guarantees.
+        </li>
+      </ul>
+
+      <p>
+        Recent projects include confinement vs. screening in the Schwinger model in curved space using MPS/DMRG, quantum simulations of topological phases in (2+1)D lattice QED, and variational and adiabatic quantum algorithms for lattice gauge theories. A list of publications is available on the <a href="publications.html">PublicPublications</a> page.
       </p>
     </div>
   </div>
