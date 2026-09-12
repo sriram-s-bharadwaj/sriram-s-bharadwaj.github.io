@@ -55,11 +55,21 @@
     }
 
     .about {
-      margin-bottom: 2.5em;
+      margin-bottom: 2em;
     }
 
     .about p {
       max-width: 900px;
+      margin-bottom: 0;
+    }
+
+    .research-overview {
+      margin-bottom: 2em;
+    }
+
+    .research-intro {
+      max-width: 900px;
+      color: #cfcfcf;
       margin-bottom: 0;
     }
 
@@ -98,18 +108,14 @@
       margin: 0;
     }
 
-    .research-section {
+    .research-details {
       flex: 1;
       min-width: 0;
     }
 
-    .research-intro {
-      color: #cfcfcf;
-      margin-bottom: 1.25em;
-    }
-
     .research-areas {
       padding-left: 1.3em;
+em;
       margin: 0 0 1.2em 0;
     }
 
@@ -134,7 +140,8 @@
     }
 
     @media (max-width: 760px) {
-      .about {
+      .about,
+      .research-overview {
         margin-bottom: 2em;
       }
 
@@ -172,6 +179,14 @@
       </p>
     </section>
 
+    <section class="research-overview">
+      <h2>Research</h2>
+
+      <p class="research-intro">
+        My research focuses on quantum algorithms and the quantum simulation of strongly coupled many-body systems, with a particular emphasis on lattice gauge theories. My work on formal aspects of quantum field theory informs my approach to constructing physically faithful and resource-efficient Hamiltonian formulations.
+      </p>
+    </section>
+
     <div class="content-layout">
       <aside class="profile">
         <div class="profile-photo">
@@ -186,13 +201,7 @@
         </p>
       </aside>
 
-      <section class="research-section">
-        <h2>Research</h2>
-
-        <p class="research-intro">
-          My research focuses on quantum algorithms and the quantum simulation of strongly-coupled many-body systems, with a particular emphasis on lattice gauge theories. My work on formal aspects of quantum field theory informs my approach to constructing physically faithful and resource-efficient Hamiltonian formulations.
-        </p>
-
+      <section class="research-details">
         <ul class="research-areas">
           <li>
             <span class="research-heading">Quantum simulation of many-body systems and lattice gauge theories.</span>
@@ -201,7 +210,8 @@
 
           <li>
             <span class="research-heading">Quantum algorithms and optimization.</span>
-            To address many-body simulation and optimization problems beyond the reach of classical methods, I design efficient quantum algorithms for continuous optimization and ground-state preparation. In work on CV-QAOA, we establish rigorous convergence guarantees and black-box quantum-classical separations. I also analyze adiabatic algorithms for preparing ground states of bosonic and lattice gauge theory Hamiltonians.         </li>
+            To address many-body simulation and optimization problems beyond the reach of classical methods, I design efficient quantum algorithms for continuous optimization and ground-state preparation. In work on CV-QAOA, we establish rigorous convergence guarantees and black-box quantum-classical separations. I also analyze adiabatic algorithms for preparing ground states of bosonic and lattice gauge theory Hamiltonians.
+          </li>
         </ul>
 
         <p class="publications-link">
