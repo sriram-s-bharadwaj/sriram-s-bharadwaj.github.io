@@ -21,7 +21,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 30px;
-      margin-bottom: 2.5em;
+      margin-bottom: 1.5em;
       padding-bottom: 0.8em;
       border-bottom: 1px solid #333333;
     }
@@ -80,7 +80,7 @@
     }
 
     .about {
-      margin-bottom: 2em;
+      margin-bottom: 1.25em;
     }
 
     .about p {
@@ -98,6 +98,14 @@
       margin-bottom: 0;
     }
 
+    .about p,
+    .research-intro,
+    .research-areas li {
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
     .content-layout {
       display: flex;
       align-items: flex-start;
@@ -110,12 +118,12 @@
     }
 
     .profile-photo img {
+      display: block;
       width: 100%;
       height: auto;
-      display: block;
+      margin-bottom: 1em;
       border: 1px solid #333333;
       border-radius: 14px;
-      margin-bottom: 1em;
     }
 
     .profile-subtitle {
@@ -167,7 +175,10 @@
         justify-content: flex-start;
       }
 
-      .about,
+      .about {
+        margin-bottom: 1.25em;
+      }
+
       .research-overview {
         margin-bottom: 2em;
       }
@@ -202,16 +213,16 @@
       <h2>About</h2>
 
       <p>
-  I am a final-year PhD candidate in Theoretical Physics at UCLA. I am fortunate to be advised by
-  <a href="https://www.pa.ucla.edu/faculty-websites/dhoker.html" target="_blank" rel="noopener noreferrer">Eric D’Hoker</a>
-  and
-  <a href="https://leoxzhou.github.io/" target="_blank" rel="noopener noreferrer">Leo Zhou</a>,
-  and to be working with
-  <a href="https://diluo28.github.io/diluo.github.io/" target="_blank" rel="noopener noreferrer">Di Luo</a>
-  and
-  <a href="https://kang-research-group.physics.ucla.edu/" target="_blank" rel="noopener noreferrer">Zhongbo Kang</a>.
-  Previously, I received an MSc in Mathematical and Theoretical Physics from the University of Oxford and a BS in Mathematics/Applied Science from UCLA.
-</p>
+        I am a final-year PhD candidate in Theoretical Physics at UCLA. I am fortunate to be advised by
+        <a href="https://www.pa.ucla.edu/faculty-websites/dhoker.html" target="_blank" rel="noopener noreferrer">Eric D’Hoker</a>
+        and
+        <a href="https://leoxzhou.github.io/" target="_blank" rel="noopener noreferrer">Leo Zhou</a>,
+        and to be working with
+        <a href="https://diluo28.github.io/diluo.github.io/" target="_blank" rel="noopener noreferrer">Di Luo</a>
+        and
+        <a href="https://kang-research-group.physics.ucla.edu/" target="_blank" rel="noopener noreferrer">Zhongbo Kang</a>.
+        Previously, I received an MSc in Mathematical and Theoretical Physics from the University of Oxford and a BS in Mathematics/Applied Science from UCLA.
+      </p>
     </section>
 
     <section class="research-overview">
