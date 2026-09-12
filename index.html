@@ -108,32 +108,25 @@
       margin-bottom: 1.25em;
     }
 
-    .research-card {
-      background: #181818;
-      border: 1px solid #333333;
-      border-radius: 14px;
-      padding: 22px;
-      margin-bottom: 18px;
+    .research-areas {
+      padding-left: 1.3em;
+      margin: 0 0 1.2em 0;
     }
 
-    .research-card h3 {
-      color: #ffffff;
-      font-size: 1.15rem;
-      line-height: 1.4;
-      margin: 0 0 0.7em 0;
+    .research-areas li {
+      margin-bottom: 1.25em;
+      padding-left: 0.15em;
     }
 
-    .research-card p {
-      margin-bottom: 0.8em;
-    }
-
-    .research-card p:last-child {
+    .research-areas li:last-child {
       margin-bottom: 0;
     }
 
-    .examples {
-      color: #b8b8b8;
-      font-size: 0.95rem;
+    .research-heading {
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
     .publications-link {
@@ -200,29 +193,17 @@
           My research focuses on quantum algorithms and the quantum simulation of strongly interacting many-body systems. My work on formal aspects of quantum field theory informs my approach to constructing physically faithful and resource-efficient Hamiltonian formulations.
         </p>
 
-        <article class="research-card">
-          <h3>Quantum simulation of many-body systems and lattice gauge theories</h3>
+        <ul class="research-areas">
+          <li>
+            <span class="research-heading">Quantum simulation of many-body systems and lattice gauge theories:</span>
+            I develop Hamiltonian formulations suited to quantum simulation and study their phase structure and dynamics using classical methods, including tensor networks and neural quantum states, as well as variational quantum algorithms.
+          </li>
 
-          <p>
-            I develop Hamiltonian formulations suited to quantum simulation and study their phase structure and dynamics using tensor networks, neural quantum states, exact diagonalization, and variational quantum algorithms.
-          </p>
-
-          <p class="examples">
-            Recent work includes confinement and screening in the Schwinger model in curved space using MPS/DMRG, as well as quantum simulations of topological phases in (2+1)D lattice QED.
-          </p>
-        </article>
-
-        <article class="research-card">
-          <h3>Quantum algorithms and optimization</h3>
-
-          <p>
-            I study quantum algorithms for continuous optimization and ground-state preparation, with an emphasis on rigorous performance guarantees and applications to many-body systems.
-          </p>
-
-          <p class="examples">
-            Recent work includes CV-QAOA, for which we establish convergence guarantees and black-box quantum-classical separations, and adiabatic algorithms for bosonic and lattice gauge theory Hamiltonians with provable error and runtime guarantees.
-          </p>
-        </article>
+          <li>
+            <span class="research-heading">Quantum algorithms and optimization:</span>
+            I study quantum algorithms for continuous optimization and ground-state preparation. In work on CV-QAOA, we establish rigorous convergence guarantees and black-box quantum-classical separations for continuous optimization problems. I also analyze adiabatic algorithms for bosonic and lattice gauge theory Hamiltonians.
+          </li>
+        </ul>
 
         <p class="publications-link">
           A complete list of papers and ongoing projects is available on the
