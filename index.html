@@ -43,19 +43,38 @@
       color: #a8c7fa;
     }
 
-    .hero {
+    h2 {
+      color: #ffffff;
+      font-size: 1.45rem;
+      margin: 0 0 0.65em 0;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    .about {
+      margin-bottom: 2.5em;
+    }
+
+    .about p {
+      max-width: 900px;
+      margin-bottom: 0;
+    }
+
+    .content-layout {
       display: flex;
       align-items: flex-start;
       gap: 44px;
-      margin-bottom: 3em;
     }
 
-    .hero-left {
+    .profile {
       width: 280px;
       flex-shrink: 0;
     }
 
-    .hero-photo img {
+    .profile-photo img {
       width: 100%;
       height: auto;
       display: block;
@@ -64,7 +83,7 @@
       margin-bottom: 1em;
     }
 
-    .hero-name {
+    .profile-name {
       font-size: 1.7rem;
       line-height: 1.15;
       margin: 0 0 0.35em 0;
@@ -72,62 +91,40 @@
       white-space: nowrap;
     }
 
-    .hero-subtitle {
+    .profile-subtitle {
       color: #b0b0b0;
       font-size: 1rem;
       line-height: 1.4;
       margin: 0;
     }
 
-    .hero-text {
+    .research-section {
       flex: 1;
       min-width: 0;
     }
 
-    .hero-text h2,
-    .research-section h2 {
-      color: #ffffff;
-      font-size: 1.45rem;
-      margin: 0 0 0.75em 0;
-    }
-
-    p {
-      margin-top: 0;
-      margin-bottom: 1em;
-    }
-
-    .research-section {
-      margin-bottom: 2em;
-    }
-
     .research-intro {
-      max-width: 800px;
       color: #cfcfcf;
-      margin-bottom: 1.5em;
-    }
-
-    .research-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
+      margin-bottom: 1.25em;
     }
 
     .research-card {
       background: #181818;
       border: 1px solid #333333;
       border-radius: 14px;
-      padding: 24px;
+      padding: 22px;
+      margin-bottom: 18px;
     }
 
     .research-card h3 {
       color: #ffffff;
       font-size: 1.15rem;
       line-height: 1.4;
-      margin: 0 0 0.8em 0;
+      margin: 0 0 0.7em 0;
     }
 
     .research-card p {
-      margin-bottom: 0.9em;
+      margin-bottom: 0.8em;
     }
 
     .research-card p:last-child {
@@ -140,28 +137,26 @@
     }
 
     .publications-link {
-      margin-top: 1.5em;
       margin-bottom: 0;
     }
 
     @media (max-width: 760px) {
-      .hero {
-        flex-direction: column;
-        gap: 24px;
-        margin-bottom: 2.5em;
+      .about {
+        margin-bottom: 2em;
       }
 
-      .hero-left {
+      .content-layout {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .profile {
         width: 280px;
         max-width: 100%;
       }
 
-      .hero-name {
+      .profile-name {
         font-size: 1.65rem;
-      }
-
-      .research-grid {
-        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -176,41 +171,35 @@
   </nav>
 
   <main>
-    <section class="hero">
-      <div class="hero-left">
-        <div class="hero-photo">
+    <section class="about">
+      <h2>About</h2>
+
+      <p>
+        I am a final-year PhD candidate in Theoretical Physics at UCLA. I am fortunate to be advised by Eric D’Hoker and Leo Zhou, and to be working with Di Luo and Zhongbo Kang. Previously, I received an MSc in Mathematical and Theoretical Physics from the University of Oxford and a BS in Mathematics/Applied Science from UCLA.
+      </p>
+    </section>
+
+    <div class="content-layout">
+      <aside class="profile">
+        <div class="profile-photo">
           <img src="portrait.jpeg" alt="Portrait of Sriram Bharadwaj">
         </div>
 
-        <h1 class="hero-name">Sriram Bharadwaj</h1>
+        <h1 class="profile-name">Sriram Bharadwaj</h1>
 
-        <p class="hero-subtitle">
+        <p class="profile-subtitle">
           PhD Candidate in Theoretical Physics<br>
           University of California, Los Angeles
         </p>
-      </div>
+      </aside>
 
-      <div class="hero-text">
-        <h2>About</h2>
+      <section class="research-section">
+        <h2>Research</h2>
 
-        <p>
-          I am a final-year PhD candidate in Theoretical Physics at UCLA. I am fortunate to be advised by Eric D’Hoker and Leo Zhou, and to be working with Di Luo and Zhongbo Kang.
+        <p class="research-intro">
+          My research focuses on quantum algorithms and the quantum simulation of strongly interacting many-body systems. My work on formal aspects of quantum field theory informs my approach to constructing physically faithful and resource-efficient Hamiltonian formulations.
         </p>
 
-        <p>
-          Previously, I received an MSc in Mathematical and Theoretical Physics from the University of Oxford and a BS in Mathematics/Applied Science from UCLA.
-        </p>
-      </div>
-    </section>
-
-    <section class="research-section">
-      <h2>Research</h2>
-
-      <p class="research-intro">
-        My research focuses on quantum algorithms and the quantum simulation of strongly interacting many-body systems. My work on formal aspects of quantum field theory informs my approach to constructing physically faithful and resource-efficient Hamiltonian formulations.
-      </p>
-
-      <div class="research-grid">
         <article class="research-card">
           <h3>Quantum simulation of many-body systems and lattice gauge theories</h3>
 
@@ -234,13 +223,13 @@
             Recent work includes CV-QAOA, for which we establish convergence guarantees and black-box quantum-classical separations, and adiabatic algorithms for bosonic and lattice gauge theory Hamiltonians with provable error and runtime guarantees.
           </p>
         </article>
-      </div>
 
-      <p class="publications-link">
-        A complete list of papers and ongoing projects is available on the
-        <a href="publications.html">Publications</a> page.
-      </p>
-    </section>
+        <p class="publications-link">
+          A complete list of papers and ongoing projects is available on the
+          <a href="publications.html">Publications</a> page.
+        </p>
+      </section>
+    </div>
   </main>
 </body>
 </html>
