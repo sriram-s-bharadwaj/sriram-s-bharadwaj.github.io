@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Sriram Bharadwaj</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 980px;
       margin: 50px auto;
       padding: 0 24px;
       line-height: 1.7;
@@ -15,49 +16,98 @@
       background: #111111;
     }
 
-    nav {
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
       margin-bottom: 2.5em;
       padding-bottom: 0.8em;
       border-bottom: 1px solid #333333;
     }
 
-    nav a {
-      margin-right: 18px;
+    .site-name {
+      color: #ffffff;
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.2;
       text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .site-name:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 18px;
+    }
+
+    nav a {
       color: #8ab4f8;
       font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
     }
 
     nav a:hover {
-      text-decoration: underline;
       color: #a8c7fa;
+      text-decoration: underline;
     }
 
     h1 {
+      color: #ffffff;
       font-size: 2.2rem;
       margin-bottom: 1em;
-      color: #ffffff;
     }
 
     a {
-  color: #8ab4f8;
-}
+      color: #8ab4f8;
+    }
 
-a:hover {
-  color: #a8c7fa;
-}
+    a:hover {
+      color: #a8c7fa;
+    }
+
+    @media (max-width: 760px) {
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+    }
   </style>
 </head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
-  <h1>Contact</h1>
-  <p>Email: sriramsb@ucla.edu</p>
-  <p>Department of Physics and Astronomy, UCLA</p>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="index.html">Sriram Bharadwaj</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact</h1>
+
+    <p>
+      Email: <a href="mailto:sriramsb@ucla.edu">sriramsb@ucla.edu</a>
+    </p>
+
+    <p>Department of Physics and Astronomy, UCLA</p>
+  </main>
 </body>
 </html>
